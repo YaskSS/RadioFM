@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <ImageButton
+            android:id="@+id/blogerLabel_Image"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/radio_icon" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            android:gravity="center_horizontal">
+
+            <com.rey.material.widget.ProgressView
+                android:id="@+id/fragment_photo_page_progress_bar"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="10dp"
+                android:visibility="gone"
+                app:pv_autostart="true"
+                app:pv_circular="true"
+                app:pv_progressMode="indeterminate"
+                app:pv_progressStyle="@style/Material.Drawable.CircularProgress" />
+
+            <TextView
+                android:id="@+id/nameSound_TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:text=""
+                android:textColor="@color/darkText"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.5"
+            android:gravity="center_horizontal">
+
+            <Button
+                android:id="@+id/play_pause_Button"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:background="@drawable/ic_play"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <Button
+                android:background="@android:color/transparent"
+                android:id="@+id/blogerfm64_TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:text="64" />
+
+            <Button
+                android:background="@android:color/transparent"
+                android:id="@+id/blogerfm128_TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:text="128" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <org.adw.library.widgets.discreteseekbar.DiscreteSeekBar
+                android:id="@+id/discrete1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:dsb_min="0"
+                app:dsb_max="100"
+                android:paddingLeft="40dp"
+                android:paddingRight="40dp"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <ImageButton
+            android:id="@+id/face_Image"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/fb" />
+
+        <ImageButton
+            android:id="@+id/vk_Image"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/vk" />
+
+        <ImageButton
+            android:id="@+id/twitter_Image"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/tw" />
+
+    </LinearLayout>
+
+</LinearLayout>

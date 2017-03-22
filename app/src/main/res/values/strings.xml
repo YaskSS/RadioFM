@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Bloger</string>
+    <string name="changeNetwork">нету интернета</string>
+</resources>
